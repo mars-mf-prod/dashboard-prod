@@ -3,10 +3,16 @@
   width: 100vw;
   // background-color: #1c2426;
   // background: rgb(12,29,36);
+  // background: radial-gradient(
+  //   circle,
+  //   rgba(12, 29, 36, 1) 0%,
+  //   rgba(23, 43, 54, 1) 100%
+  // );
+
   background: radial-gradient(
     circle,
-    rgba(12, 29, 36, 1) 0%,
-    rgba(23, 43, 54, 1) 100%
+    rgb(8, 20, 26) 0%,
+    rgb(16, 30, 37) 100%
   );
 }
 
@@ -32,7 +38,7 @@
 .ModuleNode {
   height: 80px;
   width: 80px;
-  border-radius: 100px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,6 +63,29 @@
   margin-left: 20px;
 }
 
+.MoreNode {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 1px #ece2bc;
+  }
+}
+
+
 .AppKey {
   border: 1px solid #f5f5f5;
   border-radius: 10px;
@@ -74,6 +103,7 @@
   width: 30px;
   height: 30px;
   margin-right: 10px;
+
 }
 
 .ModuleModal {
